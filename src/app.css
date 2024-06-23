@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap");
+@theme {
+  --color-primary: #ff793f;
+}
+* {
+  font-family: "Tillana", system-ui !important;
+}
+.underlined {
+  position: relative;
+}
+.underlined::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 16px;
+  width: 70%;
+  height: 14px;
+  transform: skew(-12deg);
+  background: var(--color-primary);
+  z-index: -1;
+}
